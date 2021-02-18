@@ -1,0 +1,52 @@
+.image-preview__item {
+  margin: 0.5rem;
+  width: 30%;
+  position: relative;
+
+  .image-preview__close-icon {
+    width: 1.3rem;
+    height: 1.3rem;
+    position: absolute;
+    right: 0.3rem;
+    top: 0.3rem;
+    border-radius: 50%;
+    padding: 0.34rem;
+    font-weight: 800;
+    opacity: 1;
+    cursor: pointer;
+    transition: background 0.2s ease-out;
+    background: #414141;
+
+    &:hover {
+      background: black;
+    }
+  }
+
+  .image-wrapper img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 1px 1px 11px #00000038;
+  }
+
+  .image-preview__meta {
+    font-size: 0.9rem;
+    font-weight: 400;
+    color: #474747;
+    line-height: 1.3;
+    margin: 0.3rem 0 0 0.1rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .image-preview__item {
+    margin: 0 0 1rem;
+    width: 49%;
+    padding: 0.2rem;
+
+    .image-wrapper img {
+      height: 120px;
+    }
+  }
+}
